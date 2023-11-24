@@ -26,7 +26,7 @@ describe('Verify Saucedemo Login Functionlity', () => {
     //cy.get('.submit-button.btn_action').click()
     cy.url().should('include', '/inventory.html')
   })
-  it.only('Failed Login - Wrong password - POM2', () => {
+  it('Failed Login - Wrong password - POM2', () => {
     cy.visit('')
     loginPage.inputUsername(userData.valid.valid_user)
     loginPage.inputPassword(userData.invalid[2].invalid_pass)
