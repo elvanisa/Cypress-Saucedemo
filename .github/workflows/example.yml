@@ -6,11 +6,12 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Cypress run
+      - name: Cypress run Example Spec
         uses: cypress-io/github-action@v6
         with:
           browser: chrome
           spec: cypress/e2e/1-getting-started/todo.cy.js
+      - uses: actions/upload-artifact@v3
         with:
           name: cypress-screenshots
           path: cypress/screenshots
