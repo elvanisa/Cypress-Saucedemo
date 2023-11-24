@@ -4,7 +4,8 @@ module.exports = defineConfig({
   e2e: {
     baseUrl: 'https://www.saucedemo.com/',
     env: {
-      lockedUser: 'locked_out_user'
+      lockedUser: 'locked_out_user',
+      username: ''
     },
     setupNodeEvents(on, config) {
       // implement node event listeners here
