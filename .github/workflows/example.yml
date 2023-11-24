@@ -1,7 +1,5 @@
 name: End-to-end Example tests
 on: push
-  paths:
-    - 'cypress/e2e/1-getting-started/todo.cy.js'
 jobs:
   cypress-run:
     runs-on: ubuntu-22.04
