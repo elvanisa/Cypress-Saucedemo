@@ -11,3 +11,7 @@ jobs:
         with:
           browser: chrome
           spec: cypress/e2e/1-getting-started/todo.cy.js
+        with:
+          name: cypress-screenshots
+          path: cypress/screenshots
+          if-no-files-found: ignore
