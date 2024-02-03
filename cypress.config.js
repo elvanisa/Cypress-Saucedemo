@@ -5,7 +5,8 @@ module.exports = defineConfig({
     baseUrl: 'https://www.saucedemo.com/',
     env: {
       lockedUser: 'locked_out_user',
-      username: ''
+      username: 'standard_user',
+      password: 'secret_sauce'
     },
     setupNodeEvents(on, config) {
       // implement node event listeners here
